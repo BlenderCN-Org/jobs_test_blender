@@ -27,16 +27,16 @@ def prerender(test_list):
 if __name__ == "__main__":
 
 	list_tests = [
-	["BL_RS_RM_001", ["Render mode: Wireframe"], 'WIREFRAME'], 
-	["BL_RS_RM_002", ["Render mode: Texcoord"], 'TEXCOORD'],
-	["BL_RS_RM_003", ["Render mode: Position"], 'POSITION'], 
-	["BL_RS_RM_004", ["Render mode: Normal"], 'NORMAL'], 
-	# ["BL_RS_RM_005", ["Render mode: Material index"], 'MATERIAL_INDEX'], 
-	["BL_RS_RM_006", ["Render mode: Global illumination"], 'GLOBAL_ILLUMINATION'],
-	["BL_RS_RM_007", ["Render mode: Direct illumination no shadow"], 'DIRECT_ILLUMINATION_NO_SHADOW'],
-	["BL_RS_RM_008", ["Render mode: Direct illumination"], 'DIRECT_ILLUMINATION'], 
-	# ["BL_RS_RM_009", ["Render mode: Diffuse"], 'DIFFUSE'],
-	["BL_RS_RM_010", ["Render mode: Ambient occlusion"], 'AMBIENT_OCCLUSION']
+	["BL_RS_RM_001", ["Render mode: Wireframe"], "ComplexTestUber.blend", 'WIREFRAME'], 
+	["BL_RS_RM_002", ["Render mode: Texcoord"], "ComplexTestUber.blend", 'TEXCOORD'],
+	["BL_RS_RM_003", ["Render mode: Position"], "ComplexTestUber.blend", 'POSITION'], 
+	["BL_RS_RM_004", ["Render mode: Normal"], "ComplexTestUber.blend", 'NORMAL'], 
+	#["BL_RS_RM_005", ["Render mode: Material index"], "ComplexTestUber.blend", 'MATERIAL_INDEX'], 
+	["BL_RS_RM_006", ["Render mode: Global illumination"], "ComplexTestUber.blend", 'GLOBAL_ILLUMINATION'],
+	["BL_RS_RM_007", ["Render mode: Direct illumination no shadow"], "ComplexTestUber.blend", 'DIRECT_ILLUMINATION_NO_SHADOW'],
+	["BL_RS_RM_008", ["Render mode: Direct illumination"], "ComplexTestUber.blend", 'DIRECT_ILLUMINATION'], 
+	# ["BL_RS_RM_009", ["Render mode: Diffuse"], "ComplexTestUber.blend", 'DIFFUSE'],
+	["BL_RS_RM_010", ["Render mode: Ambient occlusion"], "ComplexTestUber.blend", 'AMBIENT_OCCLUSION']
 	]
 	
 	launch_tests()

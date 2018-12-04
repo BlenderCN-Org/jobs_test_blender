@@ -127,7 +127,7 @@ def delete_sun_sky():
 
 
 def create_ies_light():
-	ies = os.path.join("{res_path}", "Candle.fbm", "PD6R12ED010- PDM6835-694SNB.ies")
+	ies = os.path.join("{res_path}", "ies", "1.ies")
 	bpy.data.lamps["Lamp"].rpr_lamp.ies_file_name = ies
 	bpy.context.object.data.rpr_lamp.intensity = 100
 
@@ -306,9 +306,9 @@ if __name__ == '__main__':
 	["BL_SM_021", ["Image size 1500 1125", "Pass Limit: 50"], change_image_size_custom, change_image_size_default, "default.blend", 50],
 	["BL_SM_022", ["PNG format", "Pass Limit: 50"], activate_png_format, empty, "default.blend", 50],	
 	["BL_SM_023", ["JPG format", "Pass Limit: 50"], activate_jpg_format, empty, "default.blend", 50],
-	# ["BL_SM_024", ["Denoiser EAW", "Pass Limit: 50"], activate_denoiser_eaw, deactivate_denoiser, "default.blend", 50],
-	# ["BL_SM_025", ["Denoiser LWR", "Pass Limit: 50"], activate_denoiser_lwr, deactivate_denoiser, "default.blend", 50],
-	# ["BL_SM_026", ["Denoiser Bilateral", "Pass Limit: 50"], activate_denoiser_bilateral, deactivate_denoiser, "default.blend", 50],
+	["BL_SM_024", ["Denoiser EAW", "Pass Limit: 50"], activate_denoiser_eaw, deactivate_denoiser, "default.blend", 50],
+	["BL_SM_025", ["Denoiser LWR", "Pass Limit: 50"], activate_denoiser_lwr, deactivate_denoiser, "default.blend", 50],
+	["BL_SM_026", ["Denoiser Bilateral", "Pass Limit: 50"], activate_denoiser_bilateral, deactivate_denoiser, "default.blend", 50],
 	["BL_SM_027", ["PBR", "Pass Limit: 50"], create_and_assign_pbr, empty, "default.blend", 50],
 	["BL_SM_028", ["Mat lib", "Pass Limit: 50"], import_rpr_matlib, empty, "default.blend", 50],
 	["BL_SM_029", ["AOV Geometric Normal", "Pass Limit: 50"], activate_aov, deactivate_aov, "default.blend", 50],
@@ -316,7 +316,7 @@ if __name__ == '__main__':
 	["BL_SM_031", ["Instances", "Pass Limit: 50"], empty, empty, "Instances.blend", 50],
 	["BL_SM_032", ["5 lights", "Pass Limit: 50"], empty, empty, "5_lights.blend", 50],
 	["BL_SM_033", ["AOV SC", "Pass Limit: 50"], empty, empty, "AOV_SC.blend", 50],
-	["BL_SM_034", ["SSS", "Pass Limit: 50"], empty, empty, "SSS_Test.blend", 50],
+	["BL_SM_034", ["SSS", "Pass Limit: 50"], empty, empty, "SSS_Test.blend", 50]
 	# ["BL_SM_035", ["Displacement", "Pass Limit: 50"], empty, empty, "Displacement.blend", 50],
 	# ["BL_SM_036", ["Quality", "Pass Limit: 50"], activate_medium_quality, deactivate_medium_quality, "WaterInsideGlass.blend", 50]
 	]

@@ -22,18 +22,16 @@ def prerender(test_list):
 	bpy.context.scene.use_nodes = True
 	nodes = bpy.data.scenes[0].node_tree.nodes
 
-	
-	nodes.new("CompositorNodeOutputFile")
 	file_output = nodes["File Output"]
 	file_output.base_path = r"{work_dir}" + "/Color"
-	file_output.file_slots[0].path = test_list[0]
+	#file_output.file_slots[0].path = test_list[0]
 
 	render_layer = nodes["Render Layers"]
 
 	bpy.context.scene.render.layers.active.rpr_data.passes_aov.enable = True
 	bpy.context.scene.render.layers.active.rpr_data.passes_aov.passesStates[test_list[4]] = True
 
-	bpy.context.scene.node_tree.links.new(render_layer.outputs[test_list[3]], file_output.inputs[0])
+	bpy.context.scene.node_tree.links.new(render_layer.outputs[test_list[3]], file_output.inputs[test_list[4]])
 
 	render(test_list[0], test_list[1])
 	bpy.context.scene.render.layers.active.rpr_data.passes_aov.passesStates[test_list[4]] = False

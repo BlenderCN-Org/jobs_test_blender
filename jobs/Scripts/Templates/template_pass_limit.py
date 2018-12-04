@@ -26,12 +26,12 @@ def prerender(test_list):
 if __name__ == "__main__":
 
 	list_tests = [
-	["BL_RS_PS_001", ["Pass Limit: 1, Easy Scene"], "easy_scene.blend", 1],
-	["BL_RS_PS_002", ["Pass Limit: 100, Easy Scene"], "easy_scene.blend", 100],
-	["BL_RS_PS_003", ["Pass Limit: 500, Easy Scene"], "easy_scene.blend", 500],
-	["BL_RS_PS_004", ["Pass Limit: 1000, Easy Scene"], "easy_scene.blend", 1000],
-	# ["BL_RS_PS_005", ["Pass Limit: 5000, Easy Scene"], "easy_scene.blend", 5000],
-	# ["BL_RS_PS_006", ["Pass Limit: 10000, Easy Scene"], "easy_scene.blend", 10000],
+	["BL_RS_PS_001", ["Pass Limit: 1, Easy Scene"], "ComplexTestUber.blend", 1],
+	["BL_RS_PS_002", ["Pass Limit: 100, Easy Scene"], "ComplexTestUber.blend", 100],
+	["BL_RS_PS_003", ["Pass Limit: 500, Easy Scene"], "ComplexTestUber.blend", 500],
+	["BL_RS_PS_004", ["Pass Limit: 1000, Easy Scene"], "ComplexTestUber.blend", 1000],
+	# ["BL_RS_PS_005", ["Pass Limit: 5000, Easy Scene"], "ComplexTestUber.blend", 5000],
+	# ["BL_RS_PS_006", ["Pass Limit: 10000, Easy Scene"], "ComplexTestUber.blend", 10000],
 	["BL_RS_PS_007", ["Pass Limit: 1, Medium Scene"], "PassLimit_1.blend", 1],
 	["BL_RS_PS_008", ["Pass Limit: 100, Medium Scene"], "PassLimit_1.blend", 100],
 	["BL_RS_PS_009", ["Pass Limit: 500, Medium Scene"], "PassLimit_1.blend", 500],
